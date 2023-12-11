@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <h1><strong> Conosco você pode crescer!</strong></h1>
+            <p>
+                Na empresa, você consegue ter acesso a vários cursos que podem aumentar sua capacidade profissional no mercado de trabalho.
+                Não perca mais seu tempo, cadastre-se e aproveite para crescer profissionalmente.
+            </p>
+        </div>
+        <div class="register-container">
+            <div class="promotion">Teste grátis por <b>7 dias</b>, depois pague R$ <b>89,90</b>/mês. </div>
+            <div class="form-container">
+                <form action="">
+                    <input type="text" class="text-box" id="nome" placeholder="Nome" required>
+                    <div class="password">
+                    <input type="password" class="text-password" id="senha" minlength="8" maxlength="20" placeholder="Senha" required>
+                                <img class="eye-show" id="eye-show" src="eye-hide.png" onclick="mostrarOcultar()">
+                    </div>
+                    <input type="email" class="text-box" id="email" placeholder="email@gmail.com" required>
+                    <input type="date" class="text-box" id="data" placeholder="dd/mm/aaaa" required>
+                    <input type="text" class="text-box" id="cpf" maxlength="14" placeholder="CPF: 111.222.333-00" oninput="mascara(this)" required>
+                    <button type="submit" class="enter" id="enter">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
